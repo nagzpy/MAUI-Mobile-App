@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
-    public class MainViewModel
+    public class MainViewModel : BaseViewModel
     {
     }
 }
