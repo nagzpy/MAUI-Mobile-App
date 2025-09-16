@@ -1,4 +1,6 @@
-﻿namespace MyFirstMAUIMobileApp
+﻿using MyFirstMAUIMobileApp.Views;
+
+namespace MyFirstMAUIMobileApp
 {
     public partial class App : Application
     {
@@ -6,7 +8,8 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            //MainPage = new AppShell();
+            MainPage = new MainPage();
         }
     }
 }
