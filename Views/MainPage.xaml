@@ -3,8 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIMobileApp.Views.MainPage"
              Title="MainPage">
-    <StackLayout>
-    <Label Text="Hello World"/>
-    <Label Text="Goodbye World"/>
-    </StackLayout>
+    <VerticalStackLayout>
+        <Grid Margin="25, 35, 20, 20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Layouts" 
+        Grid.Row="0"
+        Grid.Column="0"/>
+            <Button Text="Images" 
+    Grid.Row="0"
+    Grid.Column="1"/>
+            <Button Text="Collections" 
+    Grid.Row="1"
+    Grid.Column="0"/>
+            <Button Text="Controls" 
+    Grid.Row="1"
+    Grid.Column="1"/>
+            <Button Text="Controls" 
+    Grid.Row="2"
+    Grid.Column="0"
+    Grid.ColumnSpan="2"/>
+        </Grid>
+        
+    </VerticalStackLayout>
 </ContentPage>
