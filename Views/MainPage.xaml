@@ -16,20 +16,25 @@
             </Grid.ColumnDefinitions>
             <Button Text="Layouts" 
         Grid.Row="0"
-        Grid.Column="0"/>
+        Grid.Column="0"
+        Style="{StaticResource TileButton}"/>
             <Button Text="Images" 
     Grid.Row="0"
-    Grid.Column="1"/>
+    Grid.Column="1"
+     Style="{StaticResource TileButton}"/>
             <Button Text="Collections" 
     Grid.Row="1"
-    Grid.Column="0"/>
-            <Button Text="Controls" 
+    Grid.Column="0"
+    Style="{StaticResource TileButton}"/>
+         <Button Text="Controls" 
     Grid.Row="1"
-    Grid.Column="1"/>
+    Grid.Column="1"
+    Style="{StaticResource TileButton}"/>
             <Button Text="Controls" 
     Grid.Row="2"
     Grid.Column="0"
-    Grid.ColumnSpan="2"/>
+    Grid.ColumnSpan="2"
+    Style="{StaticResource TileButton}"/>
         </Grid>
         
     </VerticalStackLayout>
