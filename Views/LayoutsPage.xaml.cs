@@ -2,11 +2,11 @@ using MyFirstMAUIMobileApp.ViewModels;
 
 namespace MyFirstMAUIMobileApp.Views;
 
-public partial class MainPage : ContentPage
+public partial class LayoutsPage : ContentPage
 {
-	public MainPage()
+	public LayoutsPage()
 	{
 		InitializeComponent();
-		BindingContext = new MainViewModel();
+		BindingContext = new LayoutsViewModel();
 	}
 }
