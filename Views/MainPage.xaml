@@ -25,29 +25,29 @@
                 <ColumnDefinition Width="*"/>
                 
             </Grid.ColumnDefinitions>
-            
-            <Button Text="Layouts" 
+
+            <Button Text="{Binding TitleButtonLayouts}" 
                 Grid.Row="0"
                 Grid.Column="0"
                 Style="{StaticResource TileButton}"
                 Command="{Binding OnLayoutsClicked}"/>
-            
-            <Button Text="Images" 
+
+            <Button Text="{Binding TitleButtonImages}"
                 Grid.Row="0"
                 Grid.Column="1"
                 Style="{StaticResource TileButton}"/>
-            
-            <Button Text="Collections" 
+
+            <Button Text="{Binding TitleButtonCollections}"
                 Grid.Row="1"
                 Grid.Column="0"
                 Style="{StaticResource TileButton}"/>
-            
-            <Button Text="Controls" 
+
+            <Button Text="{Binding TitleButtonControls}" 
                 Grid.Row="1"
                 Grid.Column="1"
                 Style="{StaticResource TileButton}"/>
-            
-            <Button Text="SQL Lite" 
+
+            <Button Text="{Binding TitleButtonSQLLite}" 
                 Grid.Row="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
