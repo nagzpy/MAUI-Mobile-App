@@ -13,9 +13,13 @@ namespace MyFirstMAUIMobileApp.ViewModels
         public LayoutsViewModel()
         {
             Title = TitleLayouts.Title;
+
             TitleButtonStackLayout = TitleLayouts.TitleButtonStackLayout;
+
             TitleButtonVerticalStack = TitleLayouts.TitleButtonVerticalStack;
+
             TitleButtonHorizontalStack = TitleLayouts.TitleButtonHorizontalStack;
+
             TitleButtonAbsoluteLayout = TitleLayouts.TitleButtonAbsoluteLayout;
         }
 

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIMobileApp.Views.LayoutsPage"
              Title="{Binding Title}">
+    
     <VerticalStackLayout>
 
         <Grid Margin="25, 35, 20, 20">
@@ -26,28 +27,29 @@
             </Grid.ColumnDefinitions>
 
             <Button Text="{Binding TitleButtonStackLayout}" 
-            Grid.Row="0"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Style="{StaticResource TileButton}"/>
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource TileButtonTypeTwo}"/>
 
             <Button Text="{Binding TitleButtonVerticalStack}" 
-            Grid.Row="1"
-            Grid.Column="0"
-            Style="{StaticResource TileButton}"/>
+                Grid.Row="1"
+                Grid.Column="0"
+                Style="{StaticResource TileButtonTypeTwo}"/>
 
             <Button Text="{Binding TitleButtonHorizontalStack}" 
-            Grid.Row="1"
-            Grid.Column="1"
-            Style="{StaticResource TileButton}"/>
+                Grid.Row="1"
+                Grid.Column="1"
+                Style="{StaticResource TileButtonTypeTwo}"/>
 
             <Button Text="{Binding TitleButtonAbsoluteLayout}" 
-            Grid.Row="2"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Style="{StaticResource TileButton}"/>
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource TileButtonTypeTwo}"/>
 
         </Grid>
 
     </VerticalStackLayout>
+    
 </ContentPage>
