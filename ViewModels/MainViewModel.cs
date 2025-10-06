@@ -6,30 +6,41 @@ using System.Threading.Tasks;
 using MyFirstMAUIMobileApp.Models.Titles;
 using System.Windows.Input;
 using MyFirstMAUIMobileApp.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
-    public class MainViewModel : BaseViewModel
+    public partial class MainViewModel : ObservableObject
     {
-        public string TitleButtonLayouts { get; }
-        public string TitleButtonImages { get; }
-        public string TitleButtonCollections { get; }
-        public string TitleButtonControls { get; }
-        public string TitleButtonSQLLite { get; }
-        public ICommand OnLayoutsClicked { get; set; }
+        [ObservableProperty]
+        private string title = TitleMain.Title;
+
+        [ObservableProperty]
+        private string titleButtonLayouts = TitleMain.TitleButtonLayouts;
+
+        [ObservableProperty]
+        private string titleButtonImages = TitleMain.TitleButtonImages;
+
+        [ObservableProperty]
+        private string titleButtonCollections = TitleMain.TitleButtonCollections;
+
+        [ObservableProperty]
+        private string titleButtonControls = TitleMain.TitleButtonControls;
+
+        [ObservableProperty]
+        private string titleButtonSQLLite = TitleMain.TitleButtonSQLLite;
+        //public ICommand OnLayoutsClicked { get; set; }
         public MainViewModel()
         {
-            Title = TitleMain.Title;
-            TitleButtonLayouts = TitleMain.TitleButtonLayouts;
-            TitleButtonImages = TitleMain.TitleButtonImages;
-            TitleButtonCollections = TitleMain.TitleButtonCollections;
-            TitleButtonControls = TitleMain.TitleButtonControls;
-            TitleButtonSQLLite = TitleMain.TitleButtonSQLLite;
-            OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
+            
+            
         }
-        public async void OnLayoutsClickedAsync()
+
+        [RelayCommand]
+        private async Task LayoutsClickedAsync()
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
+            await Shell.Current.GoToAsync(nameof(LayoutsPage));
         }
     }
 }
