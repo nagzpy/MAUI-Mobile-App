@@ -13,5 +13,6 @@ namespace MyFirstMAUIMobileApp.Models.Titles
         public static string TitleButtonVerticalStack { get; } = "Vertical Stack";
         public static string TitleButtonHorizontalStack { get; } = "Horizontal Stack";
         public static string TitleButtonAbsoluteLayout { get; } = "Absolute Layout";
+        public static string TitleButtonFlexLayout { get; } = "Flex Layout";
     }
 }

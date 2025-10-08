@@ -45,7 +45,11 @@
             <Button Text="{Binding TitleButtonAbsoluteLayout}" 
                 Grid.Row="2"
                 Grid.Column="0"
-                Grid.ColumnSpan="2"
+                Style="{StaticResource TileButtonTypeTwo}"/>
+            
+            <Button Text="{Binding TitleButtonFlexLayout}" 
+                Grid.Row="2"
+                Grid.Column="1"
                 Style="{StaticResource TileButtonTypeTwo}"/>
 
         </Grid>
