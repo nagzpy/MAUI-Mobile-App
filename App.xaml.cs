@@ -11,7 +11,6 @@ namespace MyFirstMAUIMobileApp
             MainPage = new AppShell();
             //MainPage = new MainPage();
             //MainPage = new NavigationPage(new MainPage());
-            
         }
     }
 }
