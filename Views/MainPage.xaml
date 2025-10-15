@@ -2,28 +2,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIMobileApp.Views.MainPage"
-             Title="{Binding title}">
+             Title="{Binding Title}">
 
     <VerticalStackLayout>
         
         <Grid Margin="25, 35, 20, 20">
-            
+
             <Grid.RowDefinitions>
-                
                 <RowDefinition Height="*"/>
-                
                 <RowDefinition Height="*"/>
-                
                 <RowDefinition Height="*"/>
-                
             </Grid.RowDefinitions>
-            
+
             <Grid.ColumnDefinitions>
-                
                 <ColumnDefinition Width="*"/>
-                
                 <ColumnDefinition Width="*"/>
-                
             </Grid.ColumnDefinitions>
 
             <Button Text="{Binding TitleButtonLayouts}" 
