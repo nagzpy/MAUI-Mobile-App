@@ -9,21 +9,14 @@
         <Grid Margin="25, 35, 20, 20">
 
             <Grid.RowDefinitions>
-
                 <RowDefinition Height="*"/>
-
                 <RowDefinition Height="*"/>
-
                 <RowDefinition Height="*"/>
-
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-
                 <ColumnDefinition Width="*"/>
-
                 <ColumnDefinition Width="*"/>
-
             </Grid.ColumnDefinitions>
 
             <Button Text="{Binding TitleButtonStackLayout}" 
