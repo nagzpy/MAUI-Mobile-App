@@ -18,8 +18,6 @@ namespace MyFirstMAUIMobileApp.ViewModels
         private string titleButtonStackLayout = TitleLayouts.TitleButtonStackLayout;
 
         [ObservableProperty]
-
-
         private string titleButtonVerticalStack = TitleLayouts.TitleButtonVerticalStack;
 
         [ObservableProperty]
@@ -30,6 +28,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
 
         [ObservableProperty]
         private string titleButtonFlexLayout = TitleLayouts.TitleButtonFlexLayout;
+
         public LayoutsViewModel()
         {
           
