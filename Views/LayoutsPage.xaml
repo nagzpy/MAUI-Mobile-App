@@ -23,7 +23,8 @@
                 Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource TileButtonTypeTwo}"/>
+                Style="{StaticResource TileButtonTypeTwo}"
+                Command="{Binding LayoutStackClickedCommand}"/>
 
             <Button Text="{Binding TitleButtonVerticalStack}" 
                 Grid.Row="1"

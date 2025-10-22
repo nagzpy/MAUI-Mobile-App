@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using MyFirstMAUIMobileApp.Models.Titles;
+using MyFirstMAUIMobileApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +34,11 @@ namespace MyFirstMAUIMobileApp.ViewModels
         {
           
         }
-
+        [RelayCommand]
+        private async Task LayoutStackClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutStackPage));
+        }
       
     }
 }
