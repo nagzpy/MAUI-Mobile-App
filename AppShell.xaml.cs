@@ -9,10 +9,8 @@
         }
         private void RegisterRoutes()
         {
-            //Routes from Main Page
+            //Layouts
             Routing.RegisterRoute(nameof(Views.LayoutsPage), typeof(Views.LayoutsPage));
-            
-            //Routes from Layouts Page
             Routing.RegisterRoute(nameof(Views.LayoutStackPage), typeof(Views.LayoutStackPage));
         }
     }
