@@ -2,12 +2,6 @@
 using CommunityToolkit.Mvvm.Input;
 using MyFirstMAUIMobileApp.Models.Titles;
 using MyFirstMAUIMobileApp.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace MyFirstMAUIMobileApp.ViewModels
 {
     public partial class LayoutsViewModel : ObservableObject
