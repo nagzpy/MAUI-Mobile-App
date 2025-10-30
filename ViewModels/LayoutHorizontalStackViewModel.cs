@@ -10,7 +10,6 @@ namespace MyFirstMAUIMobileApp.ViewModels
 {
     public partial class LayoutHorizontalStackPageViewModel : ObservableObject
     {
-        [ObservableProperty]
-        private string title = TitleLayoutHorizontalStackPage.Title;
+        public string Title => TitleLayoutHorizontalStackPage.Title;
     }
 }

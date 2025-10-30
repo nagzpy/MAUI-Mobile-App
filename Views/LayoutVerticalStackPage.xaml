@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMAUIMobileApp.Views.LayoutVerticalStackPage"
+             Title="{Binding Title}">
+    
+    <VerticalStackLayout>
+
+        <BoxView WidthRequest="100" 
+                 HeightRequest="100" 
+                 Color="Red"
+                 HorizontalOptions="Center"/>
+
+        <Grid HorizontalOptions="Center">
+            <BoxView WidthRequest="100"
+                     HeightRequest="100"
+                     Color="Green"/>
+        </Grid>
+
+        <BoxView Color="Blue" 
+                 WidthRequest="100" 
+                 HeightRequest="100" 
+                 HorizontalOptions="Center" 
+                 VerticalOptions="Center"/>
+
+        <Grid HorizontalOptions="End">
+            <BoxView WidthRequest="100"
+             HeightRequest="100"
+             Color="Purple"/>
+        </Grid>
+        
+    </VerticalStackLayout>
+    
+</ContentPage>

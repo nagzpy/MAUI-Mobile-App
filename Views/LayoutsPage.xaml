@@ -20,31 +20,33 @@
             </Grid.ColumnDefinitions>
 
             <Button Text="{Binding TitleButtonStackLayout}" 
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                Style="{StaticResource TileButtonTypeTwo}"
-                Command="{Binding LayoutStackClickedCommand}"/>
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Style="{StaticResource TileButtonTypeTwo}"
+                    Command="{Binding LayoutStackClickedCommand}"/>
 
             <Button Text="{Binding TitleButtonVerticalStack}" 
-                Grid.Row="1"
-                Grid.Column="0"
-                Style="{StaticResource TileButtonTypeTwo}"/>
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Style="{StaticResource TileButtonTypeTwo}"
+                    Command="{Binding LayoutVerticalStackClickedCommand}"/>
 
             <Button Text="{Binding TitleButtonHorizontalStack}" 
-                Grid.Row="1"
-                Grid.Column="1"
-                Style="{StaticResource TileButtonTypeTwo}"/>
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Style="{StaticResource TileButtonTypeTwo}"
+                    Command="{Binding LayoutHorizontalStackClickedCommand}"/>
 
             <Button Text="{Binding TitleButtonAbsoluteLayout}" 
-                Grid.Row="2"
-                Grid.Column="0"
-                Style="{StaticResource TileButtonTypeTwo}"/>
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Style="{StaticResource TileButtonTypeTwo}"/>
             
             <Button Text="{Binding TitleButtonFlexLayout}" 
-                Grid.Row="2"
-                Grid.Column="1"
-                Style="{StaticResource TileButtonTypeTwo}"/>
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Style="{StaticResource TileButtonTypeTwo}"/>
 
         </Grid>
 

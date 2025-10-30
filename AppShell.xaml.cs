@@ -12,6 +12,8 @@
             //Layouts
             Routing.RegisterRoute(nameof(Views.LayoutsPage), typeof(Views.LayoutsPage));
             Routing.RegisterRoute(nameof(Views.LayoutStackPage), typeof(Views.LayoutStackPage));
+            Routing.RegisterRoute(nameof(Views.LayoutHorizontalStackPage), typeof(Views.LayoutHorizontalStackPage));
+            Routing.RegisterRoute(nameof(Views.LayoutVerticalStackPage), typeof(Views.LayoutVerticalStackPage));
         }
     }
 }

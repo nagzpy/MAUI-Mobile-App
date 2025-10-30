@@ -33,6 +33,17 @@ namespace MyFirstMAUIMobileApp.ViewModels
         {
             await Shell.Current.GoToAsync(nameof(LayoutStackPage));
         }
-      
+
+        [RelayCommand]
+        private async Task LayoutHorizontalStackClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutHorizontalStackPage));
+        }
+
+        [RelayCommand]
+        private async Task LayoutVerticalStackClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutVerticalStackPage));
+        }
     }
 }
