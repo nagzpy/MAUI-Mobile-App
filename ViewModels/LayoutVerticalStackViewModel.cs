@@ -9,6 +9,6 @@ namespace MyFirstMAUIMobileApp.ViewModels
 {
     class LayoutVerticalStackViewModel
     {
-        public string Title => TitleLayoutVerticalStackPage.Title;
+        public string Title => TitleLayoutVerticalStack.Title;
     }
 }

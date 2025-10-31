@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
-    public partial class LayoutHorizontalStackPageViewModel : ObservableObject
+    public partial class LayoutHorizontalStackViewModel : ObservableObject
     {
-        public string Title => TitleLayoutHorizontalStackPage.Title;
+        public string Title => TitleLayoutHorizontalStack.Title;
     }
 }

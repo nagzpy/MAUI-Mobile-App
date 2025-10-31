@@ -12,9 +12,11 @@
                  HorizontalOptions="Center"/>
 
         <Grid HorizontalOptions="Center">
+            
             <BoxView WidthRequest="100"
                      HeightRequest="100"
                      Color="Green"/>
+            
         </Grid>
 
         <BoxView Color="Blue" 
@@ -24,9 +26,11 @@
                  VerticalOptions="Center"/>
 
         <Grid HorizontalOptions="End">
+            
             <BoxView WidthRequest="100"
-             HeightRequest="100"
-             Color="Purple"/>
+                     HeightRequest="100"
+                     Color="Purple"/>
+            
         </Grid>
         
     </VerticalStackLayout>

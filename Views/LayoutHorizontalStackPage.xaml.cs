@@ -7,6 +7,6 @@ public partial class LayoutHorizontalStackPage : ContentPage
 	public LayoutHorizontalStackPage()
 	{
 		InitializeComponent();
-		BindingContext = new LayoutHorizontalStackPageViewModel();
+		BindingContext = new LayoutHorizontalStackViewModel();
 	}
 }
