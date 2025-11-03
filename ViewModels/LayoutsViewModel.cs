@@ -28,6 +28,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
         {
           
         }
+
         [RelayCommand]
         private async Task LayoutStackClickedAsync()
         {
@@ -44,6 +45,12 @@ namespace MyFirstMAUIMobileApp.ViewModels
         private async Task LayoutVerticalStackClickedAsync()
         {
             await Shell.Current.GoToAsync(nameof(LayoutVerticalStackPage));
+        }
+
+        [RelayCommand]
+        private async Task LayoutAbsoluteClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsAbsolutePage));
         }
     }
 }

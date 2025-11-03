@@ -14,6 +14,7 @@
             Routing.RegisterRoute(nameof(Views.LayoutStackPage), typeof(Views.LayoutStackPage));
             Routing.RegisterRoute(nameof(Views.LayoutHorizontalStackPage), typeof(Views.LayoutHorizontalStackPage));
             Routing.RegisterRoute(nameof(Views.LayoutVerticalStackPage), typeof(Views.LayoutVerticalStackPage));
+            Routing.RegisterRoute(nameof(Views.LayoutsAbsolutePage), typeof(Views.LayoutsAbsolutePage));
         }
     }
 }
