@@ -19,16 +19,16 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="{Binding TitleButtonLayouts}" 
-                Grid.Row="0"
-                Grid.Column="0"
-                Style="{StaticResource TileButton}"
-                Command="{Binding LayoutsClickedCommand}"/>
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Text="{Binding TitleButtonLayouts}" 
+                    Style="{StaticResource TileButton}"
+                    Command="{Binding LayoutsClickedCommand}"/>
 
-            <Button Text="{Binding TitleButtonImages}"
-                Grid.Row="0"
-                Grid.Column="1"
-                Style="{StaticResource TileButton}"/>
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Text="{Binding TitleButtonImages}"
+                    Style="{StaticResource TileButton}"/>
 
             <Button Text="{Binding TitleButtonCollections}"
                 Grid.Row="1"
