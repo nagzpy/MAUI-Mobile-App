@@ -47,7 +47,8 @@
             <Button Grid.Row="2"
                     Grid.Column="1"
                     Text="{Binding TitleButtonFlexLayout}"
-                    Style="{StaticResource TileButtonTypeTwo}"/>
+                    Style="{StaticResource TileButtonTypeTwo}"
+                    Command="{Binding LayoutFlexClickedCommand}"/>
 
         </Grid>
 
