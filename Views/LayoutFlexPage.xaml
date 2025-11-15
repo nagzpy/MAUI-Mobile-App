@@ -3,7 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIMobileApp.Views.LayoutFlexPage"
              Title="{Binding Title}">
-    <VerticalStackLayout VerticalOptions="Center">
+    
+    <VerticalStackLayout VerticalOptions="Center"
+                         Spacing="15">
+        
         <FlexLayout Direction="Row"
                     JustifyContent="SpaceAround"
                     AlignItems="Center"
@@ -22,12 +25,27 @@
                      WidthRequest="50"/>
             
         </FlexLayout>
+        
         <VerticalStackLayout>
-        <Label Text="Red"
-               Margin="45, 15, 0, 0"/>
-        <Label Text="Green"
-               Margin="185, 0, 0, 0"/>
+            
+            <FlexLayout Direction="Row"
+                        JustifyContent="SpaceAround"
+                        AlignItems="Center"
+                        BackgroundColor="White">
+
+                <Label Text="Red"
+                       Padding="0,0,25,0"/>
+
+                <Label Text="Green"
+                       Padding="0,0,12,0"/>
+
+                <Label Text="Blue"
+                       Padding="0,0,22,0"/>
+
+            </FlexLayout>
+            
         </VerticalStackLayout>
+        
     </VerticalStackLayout>
 
 </ContentPage>
