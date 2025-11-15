@@ -19,6 +19,9 @@
 
             //Images
             Routing.RegisterRoute(nameof(Views.ImagesPage), typeof(Views.ImagesPage));
+            Routing.RegisterRoute(nameof(Views.ImageURIPage), typeof(Views.ImageURIPage));
+            Routing.RegisterRoute(nameof(Views.ImagesEmbeddedPage), typeof(Views.ImagesEmbeddedPage));
+            Routing.RegisterRoute(nameof(Views.ActivityIndicatorPage), typeof(Views.ActivityIndicatorPage));
         }
     }
 }
