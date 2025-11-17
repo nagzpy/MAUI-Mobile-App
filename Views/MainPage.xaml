@@ -34,7 +34,8 @@
             <Button Text="{Binding TitleButtonCollections}"
                 Grid.Row="1"
                 Grid.Column="0"
-                Style="{StaticResource TileButton}"/>
+                Style="{StaticResource TileButton}"
+                Command="{Binding CollectionsClickedCommand}"/>
 
             <Button Text="{Binding TitleButtonControls}" 
                 Grid.Row="1"
