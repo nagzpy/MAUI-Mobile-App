@@ -1,13 +1,26 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
-    class CollectionsViewModel
+    public partial class CollectionsViewModel : ObservableObject
     {
         public string Title => Models.Titles.TitleCollections.Title;
+        public string Collections => Models.Titles.TitleCollections.Collections;
+        public string CollectionsImages => Models.Titles.TitleCollections.CollectionsImages;
+        public string CollectionButtons => Models.Titles.TitleCollections.CollectionsButtons;
+        public string CollectionIcons => Models.Titles.TitleCollections.CollectionsIcons;
+
+        [RelayCommand]
+        private async Task CollectionClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(Views.MarvelMoviesPage));
+        }
     }
 }

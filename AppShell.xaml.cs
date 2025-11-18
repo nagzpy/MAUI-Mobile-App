@@ -25,6 +25,7 @@
 
             //Collections
             Routing.RegisterRoute(nameof(Views.CollectionsPage), typeof(Views.CollectionsPage));
+            Routing.RegisterRoute(nameof(Views.MarvelMoviesPage), typeof(Views.MarvelMoviesPage));
         }
     }
 }
