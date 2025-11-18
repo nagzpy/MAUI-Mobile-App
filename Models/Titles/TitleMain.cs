@@ -14,5 +14,6 @@ namespace MyFirstMAUIMobileApp.Models.Titles
         public static string TitleButtonCollections { get; } = "Collections";
         public static string TitleButtonControls { get; } = "Controls";
         public static string TitleButtonSQLLite { get; } = "SQL Lite";
+        //Test
     }
 }
