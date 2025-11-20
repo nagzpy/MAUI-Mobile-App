@@ -6,10 +6,10 @@ using System.Diagnostics;
 
 namespace MyFirstMAUIMobileApp.ViewModels;
 
-public partial class MoviesCollectionViewModel : ObservableObject
+public partial class MarvelMoviesViewModel : ObservableObject
 {
     private List<MarvelMovies> _marvelmovies;
-    public string title => TitleMarvelMoviesCollection.Title;
+    public string Title => TitleMarvelMoviesCollection.Title;
 
     //= new() -> constructs an empty ObservableCollection<MarvelMovies>
     //and assigns it to the property — using the target-typed new() shorthand.
@@ -17,7 +17,7 @@ public partial class MoviesCollectionViewModel : ObservableObject
     //  new ObservableCollection<MarvelMovies>();
     public ObservableCollection<MarvelMovies> MarvelMoviesCollection { get; } = new();
 
-    public MoviesCollectionViewModel()
+    public MarvelMoviesViewModel()
     {
         _marvelmovies = MarvelMovies.GetMovies();
         LoadMovies();
@@ -30,7 +30,7 @@ public partial class MoviesCollectionViewModel : ObservableObject
             MarvelMoviesCollection.Clear();
             foreach (var p in _marvelmovies)
             {
-                MarvelMoviesCollection.Add(new MarvelMovies { NameofMovie = p.NameofMovie });
+                MarvelMoviesCollection.Add(new MarvelMovies { NameOfMovie = p.NameOfMovie });
             }
         }
         catch (Exception ex)

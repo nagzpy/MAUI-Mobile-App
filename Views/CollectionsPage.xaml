@@ -22,27 +22,31 @@
             <Button Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding Collections}" 
+                    Text="{Binding Collections}"
                     BackgroundColor="DeepSkyBlue"
+                    Margin="10"
                     Command="{Binding CollectionClickedCommand}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding CollectionsImages}"
-                    BackgroundColor="DeepSkyBlue"/>
+                    BackgroundColor="DeepSkyBlue"
+                    Margin="10"/>
 
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding CollectionButtons}"
-                    BackgroundColor="DeepSkyBlue"/>
+                    BackgroundColor="DeepSkyBlue"
+                    Margin="10"/>
             
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding CollectionIcons}"
-                    BackgroundColor="DeepSkyBlue"/>
+                    BackgroundColor="DeepSkyBlue"
+                    Margin="10"/>
 
         </Grid>
 

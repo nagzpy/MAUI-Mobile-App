@@ -3,14 +3,14 @@ namespace MyFirstMAUIMobileApp.Models.Entities;
 
 public class MarvelMovies
 {
-    public string NameofMovie { get; set; }
+    public string NameOfMovie { get; set; }
 
     public MarvelMovies()
     {
 
     }
 
-    public MarvelMovies(string name) => NameofMovie = name;
+    public MarvelMovies(string name) => NameOfMovie = name;
 
     public static List<MarvelMovies> GetMovies() => new List<MarvelMovies>
     {

@@ -5,6 +5,6 @@ public partial class MarvelMoviesPage : ContentPage
 	public MarvelMoviesPage()
 	{
 		InitializeComponent();
-		BindingContext = new ViewModels.MoviesCollectionViewModel();
+		BindingContext = new ViewModels.MarvelMoviesViewModel();
     }
 }
