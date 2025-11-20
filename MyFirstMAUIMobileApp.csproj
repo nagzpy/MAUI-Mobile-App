@@ -57,6 +57,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\GOG\gamora.jpg" />
+	  <None Remove="Resources\Images\GOG\groot.jpeg" />
+	  <None Remove="Resources\Images\GOG\nebula.jpg" />
+	  <None Remove="Resources\Images\GOG\rocket.jpg" />
+	  <None Remove="Resources\Images\GOG\starlord.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
@@ -115,6 +123,14 @@
 	  <MauiXaml Update="Views\MarvelMoviesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\GOG\gamora.jpg" />
+	  <MauiImage Include="Resources\Images\GOG\groot.jpeg" />
+	  <MauiImage Include="Resources\Images\GOG\nebula.jpg" />
+	  <MauiImage Include="Resources\Images\GOG\rocket.jpg" />
+	  <MauiImage Include="Resources\Images\GOG\starlord.jpg" />
 	</ItemGroup>
 
 </Project>
