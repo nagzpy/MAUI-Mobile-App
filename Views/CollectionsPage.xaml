@@ -32,7 +32,8 @@
                     Grid.ColumnSpan="2"
                     Text="{Binding CollectionsImages}"
                     BackgroundColor="DeepSkyBlue"
-                    Margin="10"/>
+                    Margin="10"
+                    Command="{Binding CollectionImagesClickedCommand}"/>
 
             <Button Grid.Row="2"
                     Grid.Column="0"

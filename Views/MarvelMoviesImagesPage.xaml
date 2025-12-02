@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyFirstMAUIMobileApp.Models.Entities"
+             x:Class="MyFirstMAUIMobileApp.Views.MarvelMoviesImagesPage"
+             Title="{Binding Title}">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+
+        <!-- View: Header Label -->
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Movies"
+               FontSize="50"
+               FontAttributes="Bold,Italic"
+               TextColor="CadetBlue"
+               WidthRequest="170" />
+        </HorizontalStackLayout>
+
+        <!-- View: Separator Line -->
+        <BoxView HeightRequest="2" BackgroundColor="#000000"/>
+
+        <CollectionView x:Name="ItemsListView"
+                ItemsSource="{Binding MarvelMoviesCollection}"
+                SelectionMode="None">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="local:MarvelMovies">
+                    <Grid Padding="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <!-- Display name of the movie -->
+                        <HorizontalStackLayout>
+                            <Label Text="{Binding NameOfMovie}"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Start"
+                           TextColor="Black"
+                           FontSize="Medium" />
+                        </HorizontalStackLayout>
+                        
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

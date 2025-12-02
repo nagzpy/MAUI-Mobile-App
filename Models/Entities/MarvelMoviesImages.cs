@@ -16,10 +16,12 @@ public class MarvelMoviesImages
         NameOfActor = name; 
         NameInMovie = moviename;
     }
-    public static List<MarvelMoviesImages> GetActors() => new List<MarvelMoviesImages>
+    public static List<MarvelMoviesImages> GetActorsCharacter() => new List<MarvelMoviesImages>
     {
-        new MarvelMoviesImages("Chris Pratt"),
-        new MarvelMoviesImages("Zoe Saldana"),
-        new MarvelMoviesImages("Chris Pratt"),
+        new MarvelMoviesImages("Chris Pratt", "Starlord"),
+        new MarvelMoviesImages("Zoe Saldana", "Gamora"),
+        new MarvelMoviesImages("Vin Diesel", "Groot"),
+        new MarvelMoviesImages("Bradley Cooper", "Rocket Raccoon"),
+        new MarvelMoviesImages("Karen Gillan", "Nebula"),
      };
 }
