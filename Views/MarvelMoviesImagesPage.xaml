@@ -5,22 +5,16 @@
              x:Class="MyFirstMAUIMobileApp.Views.MarvelMoviesImagesPage"
              Title="{Binding Title}">
 
-    <VerticalStackLayout Padding="20" Spacing="10">
+    <VerticalStackLayout Padding="20" >
 
         <!-- View: Header Label -->
-        <HorizontalStackLayout HorizontalOptions="Center">
-            <Label Text="Movies"
-               FontSize="50"
-               FontAttributes="Bold,Italic"
-               TextColor="CadetBlue"
-               WidthRequest="170" />
-        </HorizontalStackLayout>
+        <HorizontalStackLayout>
 
-        <!-- View: Separator Line -->
-        <BoxView HeightRequest="2" BackgroundColor="#000000"/>
+            <!-- View: Separator Line -->
 
-        <CollectionView x:Name="ItemsListView"
-                ItemsSource="{Binding MarvelMoviesCollection}"
+            <Image Source="{Binding groot}" WidthRequest="100" HeightRequest="100" Aspect="AspectFill" VerticalOptions="Start"/>
+            <CollectionView x:Name="ItemsListView"
+                ItemsSource="{Binding MarvelMoviesImagesCollection}"
                 SelectionMode="None">
 
             <CollectionView.ItemsLayout>
@@ -28,25 +22,33 @@
             </CollectionView.ItemsLayout>
 
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="local:MarvelMovies">
-                    <Grid Padding="2">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition />
-                        </Grid.RowDefinitions>
+                    <DataTemplate x:DataType="local:MarvelMoviesImages">
 
-                        <!-- Display name of the movie -->
-                        <HorizontalStackLayout>
-                            <Label Text="{Binding NameOfMovie}"
-                           FontAttributes="Bold"
-                           HorizontalTextAlignment="Start"
-                           TextColor="Black"
-                           FontSize="Medium" />
-                        </HorizontalStackLayout>
+                        <VerticalStackLayout Spacing="10" Margin="25,0,0,50">
+
+                            <Label Text="{Binding NameOfActor}"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Start"
+                                   TextColor="CadetBlue"
+                                   FontSize="Small"/>
+                            
+                            <Label Text="{Binding NameInMovie}"
+                                   FontAttributes="Italic,Bold"
+                                   HorizontalTextAlignment="Start"
+                                   TextColor="Blue"
+                                   FontSize="Small"/>
+                            
+                            <BoxView HeightRequest="2" BackgroundColor="#000000" Margin="0,45,0,0"  WidthRequest="200" />
+                            
+                        </VerticalStackLayout>
                         
-                    </Grid>
+                    
                 </DataTemplate>
+                
             </CollectionView.ItemTemplate>
+            
         </CollectionView>
+        </HorizontalStackLayout>
     </VerticalStackLayout>
+    
 </ContentPage>

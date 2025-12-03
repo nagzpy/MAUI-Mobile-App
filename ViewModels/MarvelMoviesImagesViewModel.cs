@@ -13,6 +13,11 @@ namespace MyFirstMAUIMobileApp.ViewModels
     public partial class MarvelMoviesImagesViewModel : ObservableObject
     {
         public string Title => Models.Titles.TitleMarvelMoviesImages.Title;
+        public ImageSource gamora => "gamora.jpg";
+        public ImageSource groot => "groot.jpg";
+        public ImageSource nebula => "nebula.jpg";
+        public ImageSource rocket => "rocket.jpg";
+        public ImageSource starlord => "starlord.jpg";
         private List<MarvelMoviesImages> _marvelmoviesimages;
 
         //= new() -> constructs an empty ObservableCollection<MarvelMovies>
