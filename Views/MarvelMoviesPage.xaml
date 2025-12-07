@@ -9,27 +9,33 @@
 
         <!-- View: Header Label -->
         <HorizontalStackLayout HorizontalOptions="Center">
+            
             <Label Text="Movies"
-               FontSize="50"
-               FontAttributes="Bold,Italic"
-               TextColor="CadetBlue"
-               WidthRequest="170" />
+                   FontSize="50"
+                   FontAttributes="Bold,Italic"
+                   TextColor="CadetBlue"
+                   WidthRequest="170" />
+            
         </HorizontalStackLayout>
 
         <!-- View: Separator Line -->
-        <BoxView HeightRequest="2" BackgroundColor="#000000"/>
+        <BoxView HeightRequest="2" 
+                 BackgroundColor="#000000"/>
 
         <CollectionView x:Name="ItemsListView"
-                ItemsSource="{Binding MarvelMoviesCollection}"
-                SelectionMode="None">
+                        ItemsSource="{Binding MarvelMoviesCollection}"
+                        SelectionMode="None">
 
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical" />
             </CollectionView.ItemsLayout>
 
             <CollectionView.ItemTemplate>
+                
                 <DataTemplate x:DataType="local:MarvelMovies">
+                    
                     <Grid Padding="2">
+                        
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                             <RowDefinition />
@@ -37,15 +43,23 @@
 
                         <!-- Display name of the movie -->
                         <HorizontalStackLayout>
+                            
                             <Label Text="{Binding NameOfMovie}"
-                           FontAttributes="Bold"
-                           HorizontalTextAlignment="Start"
-                           TextColor="Black"
-                           FontSize="Medium" />
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Start"
+                                   TextColor="Black"
+                                   FontSize="Medium" />
+                            
                         </HorizontalStackLayout>
+                        
                     </Grid>
+                    
                 </DataTemplate>
+                
             </CollectionView.ItemTemplate>
+            
         </CollectionView>
+        
     </VerticalStackLayout>
+    
 </ContentPage>

@@ -47,5 +47,6 @@ namespace MyFirstMAUIMobileApp.ViewModels
                 Debug.WriteLine(ex);
             }
         }
+
         }
 }
