@@ -60,7 +60,6 @@
 	  <None Remove="Resources\Images\GOG\gamora.jpg" />
 	  <None Remove="Resources\Images\GOG\groot.jpeg" />
 	  <None Remove="Resources\Images\GOG\nebula.jpg" />
-	  <None Remove="Resources\Images\GOG\rocket.jpg" />
 	  <None Remove="Resources\Images\GOG\starlord.jpg" />
 	</ItemGroup>
 

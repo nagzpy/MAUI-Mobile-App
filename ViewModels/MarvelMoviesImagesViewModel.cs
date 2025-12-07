@@ -39,7 +39,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
                 MarvelMoviesImagesCollection.Clear();
                 foreach (var p in _marvelmoviesimages)
                 {
-                    MarvelMoviesImagesCollection.Add(new MarvelMoviesImages { NameOfActor = p.NameOfActor, NameInMovie = p.NameInMovie});
+                    MarvelMoviesImagesCollection.Add(new MarvelMoviesImages { NameOfActor = p.NameOfActor, NameInMovie = p.NameInMovie, ImageName = p.ImageName});
                 }
             }
             catch (Exception ex)
