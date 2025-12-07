@@ -60,6 +60,7 @@
 	  <None Remove="Resources\Images\GOG\gamora.jpg" />
 	  <None Remove="Resources\Images\GOG\groot.jpeg" />
 	  <None Remove="Resources\Images\GOG\nebula.jpg" />
+	  <None Remove="Resources\Images\GOG\starlord.jpeg" />
 	  <None Remove="Resources\Images\GOG\starlord.jpg" />
 	</ItemGroup>
 
@@ -132,7 +133,7 @@
 	  <MauiImage Include="Resources\Images\GOG\groot.jpeg" />
 	  <MauiImage Include="Resources\Images\GOG\nebula.jpg" />
 	  <MauiImage Include="Resources\Images\GOG\rocket.jpg" />
-	  <MauiImage Include="Resources\Images\GOG\starlord.jpg" />
+	  <MauiImage Include="Resources\Images\GOG\starlord.jpeg" />
 	</ItemGroup>
 
 </Project>

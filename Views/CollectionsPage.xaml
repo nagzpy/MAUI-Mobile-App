@@ -12,6 +12,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -42,7 +43,7 @@
                     BackgroundColor="DeepSkyBlue"
                     Margin="10"/>
             
-            <Button Grid.Row="2"
+            <Button Grid.Row="3"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding CollectionIcons}"

@@ -33,7 +33,7 @@
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <!-- Display name of the movie -->
-                        <VerticalStackLayout Grid.Column="1" Spacing="10" Margin="10,10,0,0" HorizontalOptions="Start">
+                        <VerticalStackLayout Grid.Column="1" Spacing="10" Margin="10,20,0,0" HorizontalOptions="Start">
                             <Label Text="{Binding NameOfActor}"
                            FontAttributes="Bold"
                            HorizontalTextAlignment="Start"
@@ -46,7 +46,7 @@
                            FontSize="Small" />
                         </VerticalStackLayout>
 
-                        <BoxView VerticalOptions="End" Grid.ColumnSpan="2" BackgroundColor="#808080" HeightRequest="2" WidthRequest="400" Margin="0,140,0,0"/>
+                        <BoxView VerticalOptions="End" Grid.ColumnSpan="2" BackgroundColor="#808080" HeightRequest="1" WidthRequest="400" Margin="0,140,0,0"/>
 
                         <Image Grid.Column="0"
                                Source="{Binding ImageName}"

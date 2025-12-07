@@ -10,8 +10,8 @@ namespace MyFirstMAUIMobileApp.Models.Titles
     {
         public static string Title { get; } = "Collection Menu";
         public static string Collections { get; } = "Collections";
-        public static string CollectionsImages { get; } = "Collections W/Images";
-        public static string CollectionsButtons { get; } = "Collections W/Buttons";
-        public static string CollectionsIcons { get; } = "Collections W/Icons";
+        public static string CollectionsImages { get; } = "Collections w/Images";
+        public static string CollectionsButtons { get; } = "Collections w/Buttons";
+        public static string CollectionsIcons { get; } = "Collections w/Icons";
     }
 }
