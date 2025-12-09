@@ -126,6 +126,9 @@
 	  <MauiXaml Update="Views\MarvelMoviesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\UpdateableCollectionWButtonsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -134,6 +137,10 @@
 	  <MauiImage Include="Resources\Images\GOG\nebula.jpg" />
 	  <MauiImage Include="Resources\Images\GOG\rocket.jpg" />
 	  <MauiImage Include="Resources\Images\GOG\starlord.jpeg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\Messages\" />
 	</ItemGroup>
 
 </Project>
