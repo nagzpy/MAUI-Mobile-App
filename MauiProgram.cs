@@ -8,7 +8,9 @@ namespace MyFirstMAUIMobileApp
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-            builder.UseMauiApp<App>().ConfigureFonts(fonts =>
+            builder.UseMauiApp<App>()
+            .UseMauiCommunityToolkit()
+            .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
@@ -16,6 +18,15 @@ namespace MyFirstMAUIMobileApp
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
+            try
+            {
+                builder.Services.AddSingleton<ViewModels.CollectionUpdatableButtonViewModel>();
+                builder.Services.AddTransient<Views.UpdateableCollectionWButtonsPage>();
+            }
+            catch (Exception ex)
+            {
+                
+            }
             return builder.Build();
         }
     }
