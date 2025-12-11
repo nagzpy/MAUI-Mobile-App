@@ -62,6 +62,8 @@
 	  <None Remove="Resources\Images\GOG\nebula.jpg" />
 	  <None Remove="Resources\Images\GOG\starlord.jpeg" />
 	  <None Remove="Resources\Images\GOG\starlord.jpg" />
+	  <None Remove="Resources\Images\ImageButtons\delete.png" />
+	  <None Remove="Resources\Images\ImageButtons\edit.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -143,6 +145,8 @@
 	  <MauiImage Include="Resources\Images\GOG\nebula.jpg" />
 	  <MauiImage Include="Resources\Images\GOG\rocket.jpg" />
 	  <MauiImage Include="Resources\Images\GOG\starlord.jpeg" />
+	  <MauiImage Include="Resources\Images\ImageButtons\delete.png" />
+	  <MauiImage Include="Resources\Images\ImageButtons\edit.png" />
 	</ItemGroup>
 
 </Project>
