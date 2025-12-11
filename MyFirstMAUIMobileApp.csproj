@@ -87,6 +87,12 @@
 	  <MauiXaml Update="Views\ActivityIndicatorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\CollectionAddPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\CollectionEditPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\CollectionsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -137,10 +143,6 @@
 	  <MauiImage Include="Resources\Images\GOG\nebula.jpg" />
 	  <MauiImage Include="Resources\Images\GOG\rocket.jpg" />
 	  <MauiImage Include="Resources\Images\GOG\starlord.jpeg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Models\Messages\" />
 	</ItemGroup>
 
 </Project>

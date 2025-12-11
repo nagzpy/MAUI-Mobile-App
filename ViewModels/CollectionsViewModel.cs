@@ -28,5 +28,11 @@ namespace MyFirstMAUIMobileApp.ViewModels
         {
             await Shell.Current.GoToAsync(nameof(Views.MarvelMoviesImagesPage));
         }
+
+        [RelayCommand]
+        private async Task CollectionButtonClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(Views.UpdateableCollectionWButtonsPage));
+        }
     }
 }
