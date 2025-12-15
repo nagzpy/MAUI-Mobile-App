@@ -34,5 +34,11 @@ namespace MyFirstMAUIMobileApp.ViewModels
         {
             await Shell.Current.GoToAsync(nameof(Views.UpdateableCollectionWButtonsPage));
         }
+        
+        [RelayCommand]
+        private async Task CollectionIconsClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(Views.CollectionUpdateablePage));
+        }
     }
 }

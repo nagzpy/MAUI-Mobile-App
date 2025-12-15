@@ -98,6 +98,9 @@
 	  <MauiXaml Update="Views\CollectionsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\CollectionUpdateablePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ImagesEmbeddedPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

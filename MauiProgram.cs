@@ -21,7 +21,8 @@ namespace MyFirstMAUIMobileApp
             try
             {
                 builder.Services.AddSingleton<ViewModels.CollectionUpdatableButtonViewModel>();
-                builder.Services.AddTransient<Views.UpdateableCollectionWButtonsPage>();
+                builder.Services.AddSingleton<Views.UpdateableCollectionWButtonsPage>();
+                builder.Services.AddSingleton<Views.CollectionUpdateablePage>();
             }
             catch (Exception ex)
             {

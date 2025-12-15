@@ -20,12 +20,6 @@
     <!-- Use Grid instead of Layouts -->
     <Grid RowDefinitions="Auto, Auto, *" ColumnDefinitions="*">
 
-        <!-- Title -->
-        <FlexLayout Grid.Row="0" Direction="Column" AlignItems="Center">
-            <Label Text="Movies" FontSize="50"
-               FontAttributes="Bold, Italic"
-               TextColor="CadetBlue" />
-        </FlexLayout>
 
         <!-- Divider -->
         <BoxView Grid.Row="1" HeightRequest="2" BackgroundColor="#000000" />

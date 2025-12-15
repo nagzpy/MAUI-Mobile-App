@@ -17,13 +17,13 @@ namespace MyFirstMAUIMobileApp.ViewModels
     public partial class CollectionUpdatableButtonViewModel : ObservableObject
     {
         public string Title => TitleCollections.CollectionsButtons;
+        public string TitleIcons => TitleCollections.CollectionsIcons;
 
         [ObservableProperty]
         private bool isBusy;
 
         [ObservableProperty]
         private ObservableCollection<MarvelMovies> movieCollection = new();
-
 
         public CollectionUpdatableButtonViewModel()
         {
