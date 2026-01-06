@@ -27,4 +27,12 @@
         <Setter Property="CornerRadius" Value="15"/>
     </Style>
 
+    <Style TargetType="Button" x:Key="TileButtonTypeFour">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="BackgroundColor" Value="#FFC1CC"/>
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="BorderColor" Value="Black"/>
+        <Setter Property="CornerRadius" Value="15"/>
+    </Style>
+    
 </ResourceDictionary>

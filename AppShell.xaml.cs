@@ -31,6 +31,10 @@
             Routing.RegisterRoute(nameof(Views.CollectionEditPage), typeof(Views.CollectionEditPage));
             Routing.RegisterRoute(nameof(Views.UpdateableCollectionWButtonsPage), typeof(Views.UpdateableCollectionWButtonsPage));
             Routing.RegisterRoute(nameof(Views.CollectionUpdateablePage), typeof(Views.CollectionUpdateablePage));
+
+            //Controls
+            Routing.RegisterRoute(nameof(Views.ControlsPage), typeof(Views.ControlsPage));
+            Routing.RegisterRoute(nameof(Views.SliderPage), typeof(Views.SliderPage));
         }
     }
 }

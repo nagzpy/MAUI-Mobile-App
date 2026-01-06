@@ -40,7 +40,8 @@
             <Button Text="{Binding TitleButtonControls}" 
                 Grid.Row="1"
                 Grid.Column="1"
-                Style="{StaticResource TileButton}"/>
+                Style="{StaticResource TileButton}"
+                Command="{Binding ControlsClickedCommand}"/>
 
             <Button Text="{Binding TitleButtonSQLLite}" 
                 Grid.Row="2"
