@@ -10,24 +10,30 @@
         <!-- Name this so we can fade it in code -->
         <BoxView Color="Blue"
                  HeightRequest="25" 
-                 HorizontalOptions="Fill" />
+                 HorizontalOptions="Fill"
+                 Opacity="{Binding SliderValue}"/>
 
         <!-- Hook the ValueChanged event -->
-        <Slider Minimum="0" Maximum="1" Value="1"
-                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
+        <Slider Minimum="0" Maximum="1" 
+                ThumbColor="Magenta" MaximumTrackColor="Gold" MinimumTrackColor="Aquamarine"
                 HorizontalOptions="Fill"
-                ValueChanged="OnSliderValueChanged" />
+                Value="{Binding SliderValue}"/>
 
         <!-- This label shows the numeric value -->
         <Label FontAttributes="Bold" 
                FontSize="Large" 
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center" 
+               Text="{Binding Text}}"/>
 
         <!-- Name and fade this one too -->
         <Label Text="Moving Slider Will Change Opacity"
                FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
                HorizontalOptions="Center" />
 
+        <Button Text="{Binding TitleButton}" 
+                Style="{StaticResource TileButtonTypeFive}"
+                Command="{Binding SetToHalfCommand}"/>
+        
     </VerticalStackLayout>
     
 </ContentPage>

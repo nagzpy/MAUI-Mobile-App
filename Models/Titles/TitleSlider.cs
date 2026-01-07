@@ -9,5 +9,6 @@ namespace MyFirstMAUIMobileApp.Models.Titles
     public static class TitleSlider
     {
         public static string Title { get; } = "Slider Control";
+        public static string TitleButton { get; } = "Set Slider to 50%";
     }
 }
