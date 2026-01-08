@@ -22,7 +22,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
         [RelayCommand]
         private async Task SliderClickedAsync()
         {
-            await Shell.Current.GoToAsync(nameof(SliderPage));
+            await Shell.Current.GoToAsync(nameof(SliderChoice));
         }
     }
 }

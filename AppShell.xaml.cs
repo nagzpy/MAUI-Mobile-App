@@ -34,7 +34,9 @@
 
             //Controls
             Routing.RegisterRoute(nameof(Views.ControlsPage), typeof(Views.ControlsPage));
-            Routing.RegisterRoute(nameof(Views.SliderPage), typeof(Views.SliderPage));
+            Routing.RegisterRoute(nameof(Views.SliderVmPage), typeof(Views.SliderVmPage));
+            Routing.RegisterRoute(nameof(Views.SliderChoice), typeof(Views.SliderChoice));
+            Routing.RegisterRoute(nameof(Views.SliderXamlPage), typeof(Views.SliderXamlPage));
         }
     }
 }

@@ -80,6 +80,9 @@
 	  <Compile Update="MainPageOld.xaml.cs">
 	    <DependentUpon>MainPageOld.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\SliderVMPage.xaml.cs">
+	    <DependentUpon>SliderVmPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -140,7 +143,13 @@
 	  <MauiXaml Update="Views\MarvelMoviesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\SliderPage.xaml">
+	  <MauiXaml Update="Views\SliderChoice.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SliderVmPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SliderXamlPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\UpdateableCollectionWButtonsPage.xaml">

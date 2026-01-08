@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyFirstMAUIMobileApp.Views.SliderXamlPage"
+    Title="{Binding Title}">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Name this so we can fade it in code -->
+        <BoxView x:Name="MyBox" Color="Blue"
+                 HeightRequest="25" HorizontalOptions="Fill" />
+
+        <!-- Hook the ValueChanged event -->
+        <Slider x:Name="MySlider"
+                Minimum="0" Maximum="1" Value="1"
+                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
+                HorizontalOptions="Fill"
+                ValueChanged="OnSliderValueChanged" />
+
+        <!-- This label shows the numeric value -->
+        <Label x:Name="ValueLabel"
+               FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+
+        <!-- Name and fade this one too -->
+        <Label x:Name="InfoLabel"
+               Text="Moving Slider Will Change Opacity"
+               FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
+               HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -11,9 +11,9 @@ using static System.Math;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
-    public partial class SliderViewModel : ObservableObject
+    public partial class SliderVmViewModel : ObservableObject
     {
-        public string Title => Models.Titles.TitleSlider.Title;
+        public string Title => Models.Titles.TitleSlider.TitleVm;
         public string TitleButton => Models.Titles.TitleSlider.TitleButton;
 
         [ObservableProperty]
@@ -21,6 +21,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
 
         [ObservableProperty]
         private string text;
+
         partial void OnSliderValueChanged(double value)
         {
             Text = $"Value of Slider {Math.Round(sliderValue, 2):F2}";

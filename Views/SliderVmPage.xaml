@@ -2,7 +2,7 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="MyFirstMAUIMobileApp.Views.SliderPage"
+    x:Class="MyFirstMAUIMobileApp.Views.SliderVmPage"
     Title="{Binding Title}">
 
     <VerticalStackLayout Padding="20" Spacing="20">
@@ -14,8 +14,11 @@
                  Opacity="{Binding SliderValue}"/>
 
         <!-- Hook the ValueChanged event -->
-        <Slider Minimum="0" Maximum="1" 
-                ThumbColor="Magenta" MaximumTrackColor="Gold" MinimumTrackColor="Aquamarine"
+        <Slider Minimum="0" 
+                Maximum="1" 
+                ThumbColor="Magenta" 
+                MaximumTrackColor="Gold" 
+                MinimumTrackColor="Aquamarine"
                 HorizontalOptions="Fill"
                 Value="{Binding SliderValue}"/>
 
@@ -23,12 +26,15 @@
         <Label FontAttributes="Bold" 
                FontSize="Large" 
                HorizontalOptions="Center" 
-               Text="{Binding Text}}"/>
+               Text="{Binding Text}"/>
 
         <!-- Name and fade this one too -->
         <Label Text="Moving Slider Will Change Opacity"
-               FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
-               HorizontalOptions="Center" />
+               FontAttributes="Bold" 
+               FontSize="Medium" 
+               TextColor="Blue"
+               HorizontalOptions="Center" 
+               Opacity="{Binding SliderValue}"/>
 
         <Button Text="{Binding TitleButton}" 
                 Style="{StaticResource TileButtonTypeFive}"
