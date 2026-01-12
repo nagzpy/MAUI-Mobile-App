@@ -24,5 +24,11 @@ namespace MyFirstMAUIMobileApp.ViewModels
         {
             await Shell.Current.GoToAsync(nameof(SliderChoice));
         }
+
+        [RelayCommand]
+        private async Task StepperClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(StepperChoice));
+        }
     }
 }

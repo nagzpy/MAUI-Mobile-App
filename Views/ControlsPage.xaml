@@ -29,7 +29,8 @@
             <Button Grid.Row="0"
                     Grid.Column="1"
                     Text="{Binding TitleStepper}"
-                    Style="{StaticResource TileButtonTypeFour}"/>
+                    Style="{StaticResource TileButtonTypeFour}"
+                    Command="{Binding StepperClickedCommand}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="0"

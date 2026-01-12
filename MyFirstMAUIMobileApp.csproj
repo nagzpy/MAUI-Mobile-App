@@ -152,6 +152,15 @@
 	  <MauiXaml Update="Views\SliderXamlPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\StepperChoice.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\StepperVmPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\StepperXamlPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\UpdateableCollectionWButtonsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

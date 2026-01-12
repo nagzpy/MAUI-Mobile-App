@@ -37,6 +37,9 @@
             Routing.RegisterRoute(nameof(Views.SliderVmPage), typeof(Views.SliderVmPage));
             Routing.RegisterRoute(nameof(Views.SliderChoice), typeof(Views.SliderChoice));
             Routing.RegisterRoute(nameof(Views.SliderXamlPage), typeof(Views.SliderXamlPage));
+            Routing.RegisterRoute(nameof(Views.StepperChoice), typeof(Views.StepperChoice));
+            Routing.RegisterRoute(nameof(Views.StepperVmPage), typeof(Views.StepperVmPage));
+            Routing.RegisterRoute(nameof(Views.StepperXamlPage), typeof(Views.StepperXamlPage));
         }
     }
 }
