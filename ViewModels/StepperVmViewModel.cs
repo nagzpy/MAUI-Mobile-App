@@ -10,6 +10,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
     public partial class StepperVmViewModel : ObservableObject
     {
         public string TitleVm => Models.Titles.TitleStepper.TitleVm;
+
         [ObservableProperty]
         private int stepperValue;
     }
