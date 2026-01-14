@@ -40,6 +40,9 @@
             Routing.RegisterRoute(nameof(Views.StepperChoice), typeof(Views.StepperChoice));
             Routing.RegisterRoute(nameof(Views.StepperVmPage), typeof(Views.StepperVmPage));
             Routing.RegisterRoute(nameof(Views.StepperXamlPage), typeof(Views.StepperXamlPage));
+            Routing.RegisterRoute(nameof(Views.SwitchChoice), typeof(Views.SwitchChoice));
+            Routing.RegisterRoute(nameof(Views.SwitchXamlPage), typeof(Views.SwitchXamlPage));
+            Routing.RegisterRoute(nameof(Views.SwitchVmPage), typeof(Views.SwitchVmPage));
         }
     }
 }
