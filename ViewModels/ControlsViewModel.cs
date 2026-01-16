@@ -36,5 +36,11 @@ namespace MyFirstMAUIMobileApp.ViewModels
         {
             await Shell.Current.GoToAsync(nameof(SwitchChoice));
         }
+
+        [RelayCommand]
+        private async Task EntryClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(EntryChoicePage));
+        }
     }
 }

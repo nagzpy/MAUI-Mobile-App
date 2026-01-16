@@ -107,6 +107,12 @@
 	  <MauiXaml Update="Views\ControlsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\EntryChoicePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EntryXamlPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ImagesEmbeddedPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
