@@ -45,6 +45,8 @@
             Routing.RegisterRoute(nameof(Views.SwitchVmPage), typeof(Views.SwitchVmPage));
             Routing.RegisterRoute(nameof(Views.EntryChoicePage), typeof(Views.EntryChoicePage));
             Routing.RegisterRoute(nameof(Views.EntryXamlPage), typeof(Views.EntryXamlPage));
+            Routing.RegisterRoute(nameof(Views.EntryResultsPage), typeof(Views.EntryResultsPage));
+            Routing.RegisterRoute(nameof(Views.EntryVmPage), typeof(Views.EntryVmPage));
         }
     }
 }

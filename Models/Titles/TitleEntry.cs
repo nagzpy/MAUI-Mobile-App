@@ -10,5 +10,6 @@ namespace MyFirstMAUIMobileApp.Models.Titles
     {
         public static string TitleVm { get; } = "Entry VM";
         public static string TitleXaml { get; } = "Entry XAML";
+        public static string EntryResultTitle { get; } = "Entry Results";
     }
 }

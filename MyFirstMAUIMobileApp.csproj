@@ -110,6 +110,12 @@
 	  <MauiXaml Update="Views\EntryChoicePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\EntryResultsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EntryVmPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\EntryXamlPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

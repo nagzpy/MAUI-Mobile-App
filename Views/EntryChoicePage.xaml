@@ -30,7 +30,7 @@
                 Grid.ColumnSpan="2"
                 Text="{Binding TitleVmEntry}"
                 Style="{StaticResource TileButtonTypeFour}"
-                Command="{Binding SwitchVmClickedCommand}"/>
+                Command="{Binding EntryVmClickedCommand}"/>
 
         </Grid>
 

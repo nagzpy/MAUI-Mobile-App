@@ -20,5 +20,11 @@ namespace MyFirstMAUIMobileApp.ViewModels
         {
             await Shell.Current.GoToAsync(nameof(EntryXamlPage));
         }
+
+        [RelayCommand]
+        private async Task EntryVmClickedAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(EntryVmPage));
+        }
     }
 }
