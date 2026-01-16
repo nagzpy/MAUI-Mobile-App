@@ -18,7 +18,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
         [RelayCommand]
         private async Task EntryClicked()
         {
-            if (!string.IsNullOrEmpty(EntryText)) 
+            if (!string.IsNullOrWhiteSpace(EntryText)) 
             {
                 await Shell.Current.GoToAsync($"{nameof(Views.EntryResultsPage)}?entryText={EntryText}");
             }
