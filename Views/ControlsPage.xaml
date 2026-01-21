@@ -48,7 +48,8 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding TitlePicker}"
-                    Style="{StaticResource TileButtonTypeFour}"/>
+                    Style="{StaticResource TileButtonTypeFour}"
+                    Command="{Binding PickerClickedCommand}"/>
 
             <Button Grid.Row="3"
                     Grid.Column="0"
