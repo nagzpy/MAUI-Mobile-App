@@ -25,7 +25,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
 
             else
             {
-                await Shell.Current.DisplayAlert(TitleVm, "Entry is empty. Please enter text.", "OK");
+                await Shell.Current.DisplayAlert(TitleVm, "Entry can't be empty!", "OK");
             }
         }
     }
